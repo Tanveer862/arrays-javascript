@@ -1,0 +1,16 @@
+class railWayForm{
+    submit(){
+        console.log("Submitted your form ")
+    }
+    cancel(){
+        console.log("Cancel your form")
+    }
+    fill(name){
+    this.name=name
+    console.log(name)
+    }
+}
+let tanveer=new railWayForm();
+tanveer.submit();
+tanveer.cancel();
+tanveer.fill("Tanveer Hussain")
