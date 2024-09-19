@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Input First Number</label>
+    <input type="number" id="number"><br><br>
+    <label for="">Input second Number</label>
+    <input type="number" id="number1"><br><br>
+    <button onclick="sum()">sum</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="sub()">subtraction</button>
+</body>
+<script>
+    function sum(){
+        const number1=parseInt(document.getElementById("number").value)
+        const number2=parseInt(document.getElementById("number1").value)
+        let sum=number1+number2
+        // let div=number1/number2
+        // let mul=number1*number2
+        // let sub=number1-number2
+        document.write("The sum of Two number",sum)
+        // document.write("The division of Two number",div)
+        // document.write("The multiplication of Two number",mul)
+        // document.write("The subtraction of Two number",sub)
+    }
+function div(){
+    const number1=parseInt(document.getElementById("number").value)
+    const number2=parseInt(document.getElementById("number1").value)
+    let div=number1/number2
+    document.write("The division of Two number",div)
+}
+function mul(){
+    const number1=parseInt(document.getElementById("number").value)
+    const number2=parseInt(document.getElementById("number1").value)
+    let mul=number1*number2
+    document.write("The Multiplication of Two number",mul)
+}
+function sub(){
+    const number1=parseInt(document.getElementById("number").value)
+    const number2=parseInt(document.getElementById("number1").value)
+    let sub=number1-number2
+    document.write("The Subtraction  of Two number",sub)
+}
+
+</script>
+</html>

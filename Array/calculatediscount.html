@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter price" id="price"><br><br>
+    <button onclick="getprice()" >Submit</button>
+    <script>
+        function getprice(){
+            let discount;
+            let totalPrice;
+            const price=document.getElementById("price").value
+            if(price>2500){
+                discount=price*20/100
+                totalPrice=price-discount;
+                document.write("you got discount of 20% which is:",discount,) 
+                document.write(totalPrice)
+            }
+            else if(price>1000 && price<=2500){
+                discount=price*10/100
+                totalPrice=price-discount
+                document.write("you got discount of 10% which is:",discount)
+                document.write("\n")
+                document.write(totalPrice)
+            }
+            else if(price>500 && price<=1000){
+                discount=price*5/100
+                totalPrice=price-discount
+                document.write("you got discount of 5% which is:",discount)
+                document.write("\n")
+                document.write(totalPrice)
+            }
+            else{
+                totalPrice=price
+                document.write("No discount")
+                document.write("\n")
+                document.write(totalPrice)
+            }
+        }
+    </script>
+</body>
+</html>

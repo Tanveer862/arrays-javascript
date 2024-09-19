@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Enter Number to search</label>
+    <input type="number" name="" id="numSearch">
+    <button onclick="search()">search</button>
+</body>
+<script>
+    let myArray = []
+    for (let i = 0; i < 5; i++) {
+
+        myArray[i] = prompt("Enter 5 Number")
+    }
+    function search() {
+        const numToSearch = document.getElementById("numSearch").value
+
+        let numFound = false
+        let pos;
+        for (let i = 0; i < myArray.length; i++) {
+            if (myArray[i] == numToSearch) {
+                numFound = true;
+                pos = i;
+                break
+            }
+        }
+        if (numFound) {
+            document.write('Number ', numToSearch, 'found at index', pos);
+        }
+        else {
+            console.log('running')
+
+            document.write("Number Not found")
+        }
+    }
+</script>
+
+</html>

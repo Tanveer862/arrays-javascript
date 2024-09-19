@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="sorting()"> Sorting</button>
+</body>
+<script>
+    let myArray = []
+    for (let i = 0; i < 5; i++) {
+        myArray[i] = parseInt(prompt("Enter Five Number "))
+    }
+    
+    function sorting() {
+    let temp;
+
+        for (let i = 0; i < myArray.length; i++) {
+            for (let j = i+1; j < myArray.length; j++) {
+                if (myArray[j] < myArray[i]) {
+                    temp = myArray[j]
+                    myArray[j] = myArray[i]
+                    myArray[i] = temp
+                }
+
+            }
+       document.write("after sort:",myArray[i])       
+        }
+    }
+</script>
+
+</html>

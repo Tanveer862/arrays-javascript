@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form load</title>
+</head>
+<body>
+    <form >
+    <input type="text" placeholder="First name" id="name"><br><br>
+    <input type="text" placeholder="last name " id="last_name"><br><br>
+    <input type="number" placeholder="Enter phone number" id="number"><br><br>
+    <input type="password" placeholder="Enter password" id="password"><br><br>
+    <input type="password" placeholder="confirm password" id="confirm"><br><br>
+    <button onclick="getvalue()">Submit</button>
+</form>
+</body>
+<script>
+    function getvalue(){
+        const name=document.getElementById("name").value
+        const last_name=document.getElementById("last_name").value
+        const number=document.getElementById("number").value
+        const password=document.getElementById("password").value
+        const confirm=document.getElementById("confirm")
+     if(name==""||last_name==""||number==""||password==""||confirm==""){
+        alert("Are field are fill ")
+     } 
+     else if(isNaN(number)){
+        alert("Only number are allowed")
+     }
+     else if(number.length<10||number.length>10){
+        alert("Number shiuld b 10 digit ! Please enter valid number ")
+     } 
+     else if(password!=confirm){
+        alert("please Enter same password")
+     } 
+         document.write(" First name",name)
+         document.write("last_name",last_name)
+         document.write("phone number",number)
+         document.write("password ",password)
+         document.write("confirm password",confirm)
+    }
+</script>
+</html>

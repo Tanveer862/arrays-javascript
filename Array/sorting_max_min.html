@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  
+    <button onclick="sorting()"> Sorting</button>
+    <button onclick="maximum()">Maximum</button>
+    <button onclick="minimum()">Minimum</button>
+</body>
+<script>
+    const myarray = [];
+
+    for (let i = 0; i < 5; i++) {
+        myarray[i] = parseInt(prompt("Enter Five  Number "))
+    }
+    function sorting() {
+        let temp;
+for (let i = 0; i < myarray.length; i++) {
+    for (let j = i+1; j < myarray.length; j++) {
+        if (myarray[j] < myarray[i]) {
+            temp = myarray[j]
+            myarray[j] = myarray[i]
+            myarray[i] = temp
+        }
+
+    }
+document.write(myarray[i])       
+}
+        // myarray.sort()
+        // {
+        //     document.write(myarray)
+        // }
+
+    }
+    function maximum() {
+        let max = myarray[0]
+        for (let i = 0; i < myarray.length; i++) {
+            if (myarray[i] > max)
+                max = myarray[i]
+        }
+
+        document.write('The maximum number =', max)
+    }
+    function minimum() {
+        let min = myarray[0]
+        for (let i = 0; i < myarray.length; i++) {
+            if (myarray[i] < min)
+                min = myarray[i]
+        }
+
+        document.write('The minimum number =', min)
+    }
+</script>
+
+</html>
