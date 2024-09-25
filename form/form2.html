@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter your name" id="name"> <br><br>
+    <input type="text" placeholder="Enter your pasword" id="pasword"> <br><br>
+    <button onclick="getvalue()">login</button>
+</body>
+<script>
+    function getvalue(){
+        const name=document.getElementById("name"). value 
+        const pasword=document.getElementById("pasword").value 
+        console.log(localStorage.getItem("password"))
+        const localPassword =localStorage.getItem("password")
+        if(localPassword===pasword){
+          
+            alert("Login Successfully ")
+        }
+        else{
+            alert(`"Wrong password"${pasword}`)
+        }
+        
+    }
+</script>
+</html>
