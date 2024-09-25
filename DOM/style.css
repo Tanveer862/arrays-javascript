@@ -1,0 +1,33 @@
+h1{
+  color: blue; 
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background-color: pink;
+}
+button{
+  background-color: blue;
+  color: white ;
+}
+.java{
+  color:green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  margin: 5px;
+  background-color: aquamarine;
+}
+.newClass{
+  background-color: red;
+  height: 200px;
+  width: 100px;
+}
+#box{
+  height: 250px;
+  width: 200px;
+  background-color: blue;
+  color:white;
+}
