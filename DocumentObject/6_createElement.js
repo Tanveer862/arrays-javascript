@@ -10,9 +10,14 @@ document.querySelector("body").prepend(heading)
 heading.style.color="blue"
 heading.style.font="bold"
 let list=document.querySelectorAll("li")
-console.log(list)
+
 list[0].style.color="green"
 list[1].style.color="green"
 list[2].style.color="green"
 let input=document.createElement("input")
 document.querySelector("body").prepend(input)
+input.innerText="Enter your Name";
+let tempClass=document.getElementsByClassName("list-item")
+console.log(tempClass)
+let myArray=Array.from(tempClass)
+console.log(myArray)
