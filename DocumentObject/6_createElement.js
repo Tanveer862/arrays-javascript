@@ -15,3 +15,4 @@ list[0].style.color="green"
 list[1].style.color="green"
 list[2].style.color="green"
 let input=document.createElement("input")
+document.querySelector("body").prepend(input)
