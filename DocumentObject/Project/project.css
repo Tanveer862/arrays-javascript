@@ -1,17 +1,23 @@
 .button{
     height: 100px;
     width: 100px;
-    padding:8px
+    padding:20px
+    
+
 }
-#gray{
+#grey{
     background-color: gray;
+  
 }
 #white{
     background-color: white;
+ 
 }
 #blue{
     background-color:blue;
+
 }
 #yellow{
     background-color:yellow;
+  
 }

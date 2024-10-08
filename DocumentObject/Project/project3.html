@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project3</title>
+    <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">YouTube Channel</a>
+    </nav>
+    <div id="wraper">
+    <h1>Number gussing game</h1>
+    <p>Try and guess a random number between 1 and 100.</p>
+    <p> you have 10 attempt to guess right number. </p>
+    <br>
+    <form class="form">
+        <label2 for="guessField">Guess a number</label>
+            <input type="text" id="guessField" class="guessField"> <br>
+            <input type="submit"  id="subt" value="submit guess" class="guessSubmit">
+    </form>
+    <div class="resultparas">
+        <p>previous guess: <span class="guesses"></span></p>
+        <p>Guesses Remaining:  <span class="lastResult">10</span></p>
+        <p class="lowOrHi"></p>
+
+    </div>
+    </div>
+    <script src="project3.js"></script>
+</body>
+</html>
