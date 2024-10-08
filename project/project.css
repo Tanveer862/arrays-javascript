@@ -1,0 +1,17 @@
+.button{
+    height: 100px;
+    width: 100px;
+    padding:8px
+}
+#gray{
+    background-color: gray;
+}
+#white{
+    background-color: white;
+}
+#blue{
+    background-color:blue;
+}
+#yellow{
+    background-color:yellow;
+}
