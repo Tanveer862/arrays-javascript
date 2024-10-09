@@ -7,6 +7,17 @@ button{
 div{
     width: 100px;
     height: 100px;
+    background-color:yellow;
+    color:black;
+}
+.dark{
+    color:white;
     background-color: blue;
-    color: white;
+}
+.light{
+    background-color: green;
+    color:white;
+}
+p{
+    color:white;
 }
