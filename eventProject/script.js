@@ -38,21 +38,24 @@ function inputValue(){
   }
 }
  function moveToYellow(){
-  alert("yellow")
-  box1.append(myUser)
+  let myUser=document.getElementById("myId")
+  if(myUser !=null){
+    box1.append(myUser)
+  }
+
 
  }
  function moveToGreen(){
-  alert("green")
+  let myUser=document.getElementById("myId")
   box2.append(myUser)
  }
  function moveToBrown(){
-  alert("brown")
+  let myUser=document.getElementById("myId")
   box3.append(myUser)
   
  }
  function moveToChocolate(){
-  alert("chocolate")
+  let myUser=document.getElementById("myId")
   box4.append(myUser)
   
  }
