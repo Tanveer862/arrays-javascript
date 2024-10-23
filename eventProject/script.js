@@ -41,6 +41,11 @@ function inputValue(){
   let myUser=document.getElementById("myId")
   if(myUser !=null){
     box1.append(myUser)
+    moveYellow.disabled=true
+    moveChocolate.disabled=false
+    moveGreen.disabled=false
+    moveGreen.disabled=false
+    
   }
 
 
@@ -48,15 +53,27 @@ function inputValue(){
  function moveToGreen(){
   let myUser=document.getElementById("myId")
   box2.append(myUser)
+  moveGreen.disabled=true
+  moveChocolate.disabled=false
+  moveBrown.disabled=false
+  moveYellow.disabled=false
  }
  function moveToBrown(){
   let myUser=document.getElementById("myId")
   box3.append(myUser)
+  moveBrown.disabled=true
+  moveChocolate.disabled=false
+  moveGreen.disabled=false
+  moveYellow.disabled=false
   
  }
  function moveToChocolate(){
   let myUser=document.getElementById("myId")
   box4.append(myUser)
+  moveChocolate.disabled=true
+  moveGreen.disabled=false
+  moveYellow.disabled=false
+  moveBrown.disabled=false
   
  }
 
