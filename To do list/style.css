@@ -1,0 +1,29 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:cornflowerblue;
+}
+#container{
+    width:50%;
+    min-height:50vh;
+    background-color:cadetblue;
+}
+#myId{
+   padding:10px;
+   background-color: black;
+   color:white;
+}
+.add{
+    padding: 10px;
+    background-color: green;
+    color:white;
+}
+#myUl{
+    list-style: none;
+}
+li{
+  padding:10px;
+    background-color: antiquewhite;
+    gap:10px;
+}
