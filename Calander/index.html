@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="calander">
+            <div class="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">january</p>
+                <p id="year">2020</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let date=document.getElementById("date")
+        let day=document.getElementById("day")
+        let month=document.getElementById("month")
+        let year=document.getElementById("year")
+        let today=new Date();
+        let weekDays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+        let allMonths=["January","February","March","April","May","June","July","August",
+        "September","October","November","December"]
+
+        date.innerHTML=(today.getDate()<10?"0":"")+today.getDate();
+        day.innerHTML=weekDays[today.getDay()];
+        month.innerHTML=allMonths[today.getMonth()];
+        year.innerHTML=today.getFullYear();
+    </script>
+</body>
+</html>
