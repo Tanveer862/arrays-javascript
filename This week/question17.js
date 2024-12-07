@@ -13,7 +13,7 @@ if(candles[k]===maxBirth){
     count++;
 }
     }
-    console.log(maxBirth)
+ console.log(maxBirth)
 console.log(count)
 }
 birthdayCakeCandles([3,4,5,6,9,9,6,7,])

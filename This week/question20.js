@@ -7,8 +7,6 @@
     const countInRemainder = s.slice(0, remainder).split('').filter(char => char === 'a').length;
     return (fullRepetitions * countInS) + countInRemainder;
 }
-
-// Example usage:
 const s = 'abcac';
 const n = 10;
 console.log(repeatedString(s, n)); 

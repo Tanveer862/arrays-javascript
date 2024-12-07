@@ -6,7 +6,6 @@ function miniMaxSum(arr) {
     let maxSum=0;
     let minSum=0;
     for(let i=0; i<arr.length;i++){
-        {
             for(let j=i+1;j<arr.length;j++){
                 if(arr[i]>arr[j]){
                     temp=arr[i];
@@ -14,7 +13,7 @@ function miniMaxSum(arr) {
                     arr[j]=temp;
                 
                 }
-        }
+        
     }
 }
 console.log(arr)
